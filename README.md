@@ -1,7 +1,8 @@
 # Overview
 [OpenDNS Family Shield](https://www.opendns.com/setupguide/#familyshield) (or indeed many other filtering DNS providers) cannot enforce [safe search](https://support.opendns.com/hc/en-us/articles/227986807-How-to-Enforcing-Google-SafeSearch-YouTube-and-Bing) for search engines.
 Short of introducing an HTTP proxy, a common recommendation is to use host files to work around this issue but with a larger number of devices centralized management is desirable.
-This can be achieved by using a local DNS resolver that intercepts requests and redirects them to the safe-search equivalent hosts.
+
+This can be achieved by using a local DNS resolver that intercepts requests and redirects them to their safe-search equivalent hosts, with Unbound being a great free tool to achieve this.
 
 # Setup
 If you already familiar with Unbound, you'll just need the `safe-search.conf` file which you can include using `include: "safe-search.conf"`.

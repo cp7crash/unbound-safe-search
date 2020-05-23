@@ -5,7 +5,7 @@ Short of introducing an HTTP proxy, a common recommendation is to use host files
 This can be achieved by using a local DNS resolver that intercepts requests and redirects them to their safe-search equivalent hosts, with Unbound being a great free tool to achieve this.
 
 # Setup
-If you already familiar with Unbound, you'll just need the `safe-search.conf` file which you can include using `include: "safe-search.conf"`.
+If you already familiar with Unbound, you'll just need the `safe-search.conf` file which you can include using `include: "safe-search.conf"`(make sure you do this before you declare any forward zones).
 
 To setup from scratch:
 

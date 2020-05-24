@@ -16,4 +16,7 @@ To setup from scratch:
 
 The provided `server.conf` assumes multiple VLANs/APs (one for adults, one for kids) with the non-restricted/adult DNS server provided on a different IP.
 
-Tested on Windows Server 2019 and Unbound 1.10.
+# Generating Config
+See `generate-zones.cmd` for a little help if you need to generate config for a long list of domains (used for google domain list)
+
+_All tested on Windows Server 2019 and Unbound 1.10_
